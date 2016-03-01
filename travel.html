@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html manifest="_app.mf">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="http://Tamik.ru/">
+	<meta name="keywords" content="Evil Wheels, Evil Wheels Riders Crew, Riders Crew, Evil Wheels Crew, Evil, Wheels, Crew, Riders, MTB, Mountain bike, DH, Downhill, FR, Freeride, MX, Motocross, Hard enduro, Enduro, Bicycle, Moto, Mountains, Russia, команда, Россия, эндуро, горный велосипед, мотоцикл, велосипед, мотокросс, хард эндуро, фрирайд, даунхилл">
+	<meta name="description" content="Команда райдеров из города Нальчик, занимающихся активными видами спорта, такими, как мотокросс и горный велосипед. Сфера интересов также направлена на горный туризм.">
+	<meta property="og:title" content="Evil Wheels Riders Crew">
+	<meta property="og:description" content="Команда райдеров из города Нальчик, занимающихся активными видами спорта, такими, как мотокросс и горный велосипед. Сфера интересов также направлена на горный туризм.">
+	<meta property="og:url" content="http://evilwheels.ru/">
+	<meta property="og:image" content="native/og_image.png">
+	<title>Путешествия // Evil Wheels Riders Crew</title>
+	<link rel="shortcut icon" href="native/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/viewmodel.css">
+	<link rel="stylesheet" href="styles/popup.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="http://cdn.Tamik.ru/storage/lib/jquery.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/model.js"></script>
+</head>
+<body>
+	<div class="popup">
+		<div class="fade"></div>
+		<div class="window">
+			<div class="photog"></div>
+			<div class="descp">
+				<p></p>
+				<a href="#" class="pin" target="_blank">Посмотреть на карте</a>
+			</div>
+		</div>
+	</div>
+	<div class="app">
+		<div class="name">
+			<h1 class="title">Путешествия</h1>
+			<span class="slices">
+				<span class="slice"></span>
+				<span class="slice"></span>
+			</span>
+			<h1 class="subtitle">Evil Wheels</h1>
+		</div>
+		<nav class="return"><a href="/" class="link">Вернуться</a></nav>
+		<div class="head_background"></div>
+		<p class="introduce">В моменты, когда у нас есть свободное время и хочется отдохнуть, мы собираем необходимый инвентарь в рюкзак или багажник и отправляемся на поиск интересных мест и красивых видов, которых так не хватает при рутинной работе или сплошном однообразии. Мы не любим оставаться там, где всё уже изучено и не представляет исследовательского интереса. Ведь вокруг так много интересного!</p>
+		<div class="background"></div>
+		<div class="map" id="map"></div>
+		<div class="feed">
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/0.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/1.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/2.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/3.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/4.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/5.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/6.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/7.jpg);"></div>
+			</div>
+			<div class="pinned">
+				<div class="image" style="background-image: url(upl/snapster/8.jpg);"></div>
+			</div>
+		</div>
+		<div class="more" onclick="loadmore();"><span>Показать еще</span></div>
+	</div>
+	<footer>
+		<h2 class="title">Следите за нами в социальных сетях</h2>
+		<h1 class="hash">#<span>EvilWheels</span></h1>
+		<div class="links">
+			<a href="http://evilwheels.ru/crew" class="link">О команде</a>
+			<a href="http://evilwheels.ru/mtb" class="link">Велоспорт</a>
+			<a href="http://evilwheels.ru/moto" class="link">Мотоспорт</a>
+			<a href="http://evilwheels.ru/travel" class="link">Путешествия</a>
+		</div>
+	</footer>
+	<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33882629 = new Ya.Metrika({ id:33882629, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/33882629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</body>
+</html>

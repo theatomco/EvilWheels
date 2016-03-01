@@ -1,0 +1,742 @@
+.landing {
+	width: 100%;
+	height: 950px;
+}
+
+.landing > nav {
+	font-weight: bold;
+	font-size: 20px;
+	position: absolute;
+	margin-top: 35px;
+	margin-right: 50px;
+	right: 0%;
+	z-index: 1;
+}
+
+.landing > nav > ul {
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+	list-style: none;
+}
+
+.landing > nav > ul > li {
+	display: inline-block;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	padding: 5px;
+	cursor: pointer;
+	vertical-align: middle;
+	color: #151515;
+}
+
+.landing > nav > ul > li:hover {
+	border-color: #151515;
+}
+
+.landing > nav > ul > a > li {
+	display: inline-block;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	padding: 5px;
+	cursor: pointer;
+	vertical-align: middle;
+	color: #151515;
+}
+
+@media(max-width: 768px) {
+	.landing > nav {
+		left: 50%;
+		margin-left: -107px;
+	}
+}
+
+ul#main {
+	margin-top: 10px;
+}
+
+ul#back {
+	display: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.25);
+	width: 100px;
+	height: 950px;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+	z-index: 2;
+}
+
+ul#back > li {
+	border: 0px;
+	padding: 0px;
+}
+
+ul#back > li > span {
+	font-size: 48px;
+}
+
+ul#social {
+	margin-top: -5px;
+	list-style: none;
+}
+
+ul#social > a {
+	text-decoration: none;
+}
+
+ul#social > a > li {
+	display: block;
+	list-style: none;
+}
+
+ul#social > a > li:hover {
+	border-color: transparent;
+}
+
+ul#social > a > li > div {
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 2px solid transparent;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+ul#social > a > li > div:hover {
+	border-color: #151515;
+}
+
+ul#social > a > li > .vk_pick {
+	background-image: url(http://evilwheels.ru/native/vk_pick.png);
+	border-color: #3a6892;
+}
+
+ul#social > a > li > .instagram_pick {
+	background-image: url(http://evilwheels.ru/native/instagram_pick.png);
+	border-color: #2a5b83;
+}
+
+ul#social > a > li > .youtube_pick {
+	background-image: url(http://evilwheels.ru/native/youtube_pick.png);
+	border-color: #fd221a;
+}
+
+@media(max-width: 768px) {
+	ul#social > a > li {
+		display: inline-block;
+	}
+}
+
+.landing > .mainview {
+	position: absolute;
+	background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/landing.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 950px;
+}
+
+.landing > .backview {
+	display: none;
+	width: 100%;
+	height: 950px;
+}
+
+.mainview > .logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-image: url(http://evilwheels.ru/native/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 360px;
+	margin-top: -175px;
+	margin-left: -300px;
+}
+
+@media(min-width: 1900px) {
+	.mainview > .logo {
+		width: 700px;
+		height: 400px;
+		margin-top: -200px;
+		margin-left: -350px;
+	}
+}
+
+@media(max-width: 800px) {
+	.mainview > .logo {
+		width: 500px;
+		height: 300px;
+		margin-top: -150px;
+		margin-left: -250px;
+	}
+}
+
+@media(max-width: 400px) {
+	.mainview > .logo {
+		width: 350px;
+		height: 200px;
+		margin-top: -100px;
+		margin-left: -175px;
+	}
+}
+
+.mainview > .btn-section {
+	position: absolute;
+	bottom: -5px;
+	text-align: center;
+}
+
+.mainview > .btn-section > .topage {
+	background: none;
+	border: none;
+	width: auto;
+	height: 100px;
+	cursor: pointer;
+	outline: none;
+	transition: box-shadow 0.5s ease;
+}
+
+.mainview > .btn-section > .topage:hover {
+	box-shadow: inset 0px -15px 15px rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width: 600px) {
+	.mainview > .btn-section {
+		display: none;
+	}
+}
+
+.backview > .yandexmap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.backview > .dashinfo {
+	position: absolute;
+	bottom: 50px;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 4px;
+	width: 370px;
+	margin-left: 50px;
+	padding: 15px;
+	box-shadow: 0px 0px 25px rgba(50, 50, 50, 0.25);
+	transition: box-shadow 0.25s ease;
+}
+
+.backview > .dashinfo:hover {
+	box-shadow: 0px 0px 40px rgba(50, 50, 50, 0.4);
+}
+
+.backview > .dashinfo > hr {
+	background-color: rgba(50, 50, 50, 0.1);
+	border: 0px;
+	width: 100%;
+	height: 1px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.backview > .dashinfo > span {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.backview > .dashinfo > span > a {
+	text-decoration: none;
+	font-weight: bold;
+	color: rgba(0, 50, 255, 1);
+	border-bottom: 2px solid transparent;
+}
+
+.backview > .dashinfo > span > a:hover {
+	border-color: rgba(0, 50, 255, 1);
+}
+
+.big_module {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.topage > span {
+	margin-left: -5px;
+	font-size: 68px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.big_module > .module {
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+
+@media(max-width: 1100px) {
+	.big_module {
+		width: 100%;
+		margin: 0px;
+	}
+
+	.big_module > .module {
+		padding-bottom: 0px;
+	}
+}
+
+.big_module > .module > h1.big {
+	font-size: 56px;
+	cursor: default;
+	transition: color 0.25s ease;
+}
+
+.big_module > .module > h1.big:hover {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.big_module > .module > p {
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.big_module > .module > a {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: rgba(0, 50, 255, 0.9);
+	border-bottom: 2px solid transparent;
+}
+
+.big_module > .module > a:hover {
+	border-color: rgba(0, 50, 255, 0.7);
+}
+
+.big_module > .module > .pattern {
+	box-shadow: 0px 0px 50px rgba(50, 50, 50, 0.1);
+}
+
+.t_module {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+.t_module > h1 {
+	font-size: 72px;
+	font-weight: bold;
+	cursor: default;
+	text-align: center;
+}
+
+.t_module > p {
+	width: 650px;
+	margin: 0 auto;
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: center;
+}
+
+@media(max-width: 1100px) {
+	.t_module {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.t_module > h1 {
+		width: auto;
+	}
+}
+
+@media(max-width: 768px) {
+	.t_module > h1 {
+		font-size: 54px;
+	}
+
+	.t_module > p {
+		width: auto;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+.l_module {
+	height: 450px;
+}
+
+.l_module > span.introduce {
+	font-size: 20px;
+	font-weight: bold;
+	color: rgba(0, 0, 0, 0.05);
+	width: 100px;
+	cursor: default;
+}
+
+.l_module > h1.big {
+	width: 1050px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+.l_module > .line {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.05);
+	width: 75px;
+	height: 2px;
+	margin-top: 10px;
+}
+
+.l_module > p {
+	font-size: 16px;
+	width: 360px;
+	margin-left: 100px;
+	color: rgba(0, 0, 0, 0.85);
+}
+
+.l_module > a {
+	margin-left: 100px;
+	line-height: 35px;
+}
+
+.l_module > .gradient {
+	position: absolute;
+	background-color: rgba(50, 50, 50, 0.1);
+	width: 250px;
+	height: 450px;
+	margin-left: 250px;
+	box-shadow: 0px 0px 50px rgba(50, 50, 50, 0.15);
+	z-index: -1;
+}
+
+.l_module > .photo {
+	position: absolute;
+	width: 560px;
+	height: 450px;
+	margin-top: -50px;
+	margin-left: 500px;
+	z-index: -1;
+}
+
+@media(max-width: 1200px) {
+	.l_module > .line {
+		display: none;
+	}
+
+	.l_module > p {
+		margin-left: 15px;
+	}
+
+	.l_module > a {
+		margin-left: 15px;
+	}
+
+	.l_module > .gradient {
+		margin-left: 300px;
+	}
+
+	.l_module > .photo {
+		float: right;
+	}
+}
+
+@media(max-width: 1100px) {
+	.l_module > span.introduce {
+		display: none;
+	}
+
+	.l_module > h1 {
+		width: auto;
+		margin-top: 0px;
+		margin-left: 50px;
+		padding-top: 50px;
+	}
+
+	.l_module > p {
+		width: 350px;
+		margin-left: 75px;
+	}
+
+	.l_module > .gradient {
+		display: none;
+	}
+
+	.l_module > .photo {
+		margin: 0px;
+		width: 100%;
+		opacity: 0.35;
+	}
+
+	.l_module > a {
+		margin-left: 75px;
+		clear: both;
+	}
+}
+
+@media(max-width: 400px) {
+	.l_module > h1 {
+		margin-left: 10px;
+	}
+
+	.l_module > p {
+		margin-left: 15px;
+	}
+
+	.l_module > a {
+		margin-left: 15px;
+	}
+}
+
+.r_module {
+	height: 450px;
+	padding-top: 50px;
+}
+
+.r_module > .photo {
+	position: absolute;
+	width: 550px;
+	height: 450px;
+	z-index: -1;
+}
+
+.r_module > .quad {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 550px;
+	height: 450px;
+	margin-top: 50px;
+	margin-left: 150px;
+	z-index: -2;
+}
+
+.r_module > h1.big {
+	margin-top: 80px;
+	margin-left: 725px;
+	padding-top: 70px;
+}
+
+.r_module > p {
+	width: 300px;
+	margin-top: 25px;
+	margin-right: 25px;
+	float: right;
+}
+
+.r_module > a {
+	float: right;
+	margin-top: 210px;
+	width: auto;
+	margin-right: -80px;
+}
+
+@media(max-width: 1100px) {
+	.r_module {
+		padding-top: 0px;
+	}
+
+	.r_module > .photo {
+		margin: 0px;
+		width: 100%;
+		opacity: 0.35;
+	}
+
+	.r_module > .quad {
+		display: none;
+	}
+
+	.r_module > h1.big {
+		width: auto;
+		margin-top: 0px;
+		margin-left: 50px;
+		padding-top: 50px;
+	}
+
+	.r_module > p {
+		width: 350px;
+		margin-left: 75px;
+		margin-right: 0px;
+		float: left;
+	}
+
+	.r_module > a {
+		margin-top: 5px;
+		margin-left: 75px;
+		margin-right: 0px;
+		clear: both;
+		float: left;
+	}
+}
+
+@media(max-width: 400px) {
+	.r_module > h1.big {
+		margin-left: 10px;
+	}
+
+	.r_module > p {
+		margin-left: 15px;
+	}
+
+	.r_module > a {
+		margin-left: 15px;
+	}
+}
+
+.c_module {
+	height: 450px;
+	margin-top: 75px;
+}
+
+.c_module > .photos {
+	position: absolute;
+	width: 450px;
+	height: 450px;
+	text-align: right;
+	margin-left: 600px;
+}
+
+.c_module > .photos > .image {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 200px;
+	padding: 9px;
+	margin: 2px;
+	display: inline-block;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+.c_module > .quad {
+	position: absolute;
+	background-color: rgba(50, 50, 50, 0.1);
+	width: 450px;
+	height: 450px;
+	margin-left: 560px;
+	margin-top: 35px;
+	z-index: -2;
+}
+
+.c_module > h1.big {
+	width: 50%;
+	padding-top: 80px;
+	padding-bottom: 25px;
+}
+
+.c_module > .line {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.05);
+	width: 75px;
+	height: 2px;
+	margin-top: 10px;
+}
+
+.c_module > p {
+	width: 450px;
+	margin-left: 100px;
+}
+
+.c_module > a {
+	line-height: 35px;
+	margin-left: 100px;
+}
+
+@media(max-width: 1100px) {
+	.c_module {
+		margin-top: 0px;
+	}
+
+	.c_module > .photos {
+		display: none;
+	}
+
+	.c_module > .photo {
+		position: absolute;
+		width: 100%;
+		height: 450px;
+		opacity: 0.35;
+		z-index: -1;
+	}
+
+	.c_module > .quad {
+		display: none;
+	}
+
+	.c_module > h1.big {
+		width: auto;
+		margin-top: 0px;
+		margin-left: 50px;
+		padding-top: 50px;
+	}
+
+	.c_module > .line {
+		display: none;
+	}
+
+	.c_module > p {
+		width: 350px;
+		margin-left: 75px;
+	}
+
+	.c_module > a {
+		margin-left: 75px;
+		clear: both;
+	}
+}
+
+@media(max-width: 400px) {
+	.c_module > h1.big {
+		margin-left: 10px;
+	}
+
+	.c_module > p {
+		margin-left: 15px;
+	}
+
+	.c_module > a {
+		margin-left: 15px;
+	}
+}
+
+.container_photo > .orbit-wrapper > .photo > .image {
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 560px;
+	height: 450px;
+}
+
+.close-block {
+	display: none;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background-color: rgba(100, 100, 100, 0.25);
+	width: 165px;
+	height: 950px;
+	padding-top: 30px;
+	cursor: pointer;
+	text-align: center;
+	z-index: 1;
+	transition: background-color 0.25s ease;
+}
+
+.close-block:hover {
+	background-color: rgba(100, 100, 100, 0.30);
+}
+
+.ar_close {
+	background-image: url(http://evilwheels.ru/native/ar_close.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 35px;
+	height: 35px;
+	margin: 0 auto;
+}
+
+.ar_down {
+	background-image: url(http://evilwheels.ru/native/ar_down.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+}

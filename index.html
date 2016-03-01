@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html manifest="_app.mf">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="http://Tamik.ru/">
+	<meta name="keywords" content="Evil Wheels, Evil Wheels Riders Crew, Riders Crew, Evil Wheels Crew, Evil, Wheels, Crew, Riders, MTB, Mountain bike, DH, Downhill, FR, Freeride, MX, Motocross, Hard enduro, Enduro, Bicycle, Moto, Mountains, Russia, команда, Россия, эндуро, горный велосипед, мотоцикл, велосипед, мотокросс, хард эндуро, фрирайд, даунхилл">
+	<meta name="description" content="Команда райдеров из города Нальчик, занимающихся активными видами спорта, такими, как мотокросс и горный велосипед. Сфера интересов также направлена на горный туризм.">
+	<meta property="og:title" content="Evil Wheels Riders Crew">
+	<meta property="og:description" content="Команда райдеров из города Нальчик, занимающихся активными видами спорта, такими, как мотокросс и горный велосипед. Сфера интересов также направлена на горный туризм.">
+	<meta property="og:url" content="http://evilwheels.ru/">
+	<meta property="og:image" content="native/og_image.png">
+	<title>Evil Wheels Riders Crew</title>
+	<link rel="shortcut icon" href="native/favicon.ico">
+	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/landing.css">
+	<link rel="stylesheet" href="styles/popup.css">
+	<link rel="stylesheet" href="styles/orbit.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="http://cdn.Tamik.ru/storage/libs/jquery.js"></script>
+	<script src="http://cdn.Tamik.ru/storage/libs/device.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/orbit.js"></script>
+	<script src="js/popup.js"></script>
+</head>
+<body>
+	<div class="popup">
+		<div class="fade"></div>
+		<div class="window">
+			<div class="photog"></div>
+			<div class="descp">
+				<p></p>
+				<a href="#" class="pin" target="_blank">Посмотреть на карте</a>
+			</div>
+		</div>
+	</div>
+	<div class="landing">
+		<nav id="mapview">
+			<ul id="main">
+				<li class="map" id="nalchik"><span>Нальчик</span></li>
+				<li class="map" id="taganrog"><span>Таганрог</span></li>
+				<li class="map" id="moscow"><span>Москва</span></li>
+			</ul>
+			<ul id="social">
+				<a href="http://vk.com/evil_wheels" title="Наше сообщество во ВКонтакте" target="_blank">
+					<li id="vk">
+						<div class="vk_pick"></div>
+					</li>
+				</a>
+				<a href="http://instagram.com/evil_wheels" title="Наш аккаунт в Instagram" target="_blank">
+					<li id="instagram">
+						<div class="instagram_pick"></div>
+					</li>
+				</a>
+				<a href="http://youtube.com/channel/UCH1Onfk5Uzy8KLwdC_tXavg" title="Наш канал на YouTube" target="_blank">
+					<li id="youtube">
+						<div class="youtube_pick"></div>
+					</li>
+				</a>
+			</ul>
+		</nav>
+		<div class="close-block">
+			<div class="ar_close"></div>
+		</div>
+		<div class="mainview">
+			<div class="logo"></div>
+			<div class="btn-section">
+				<button class="topage">
+					<div class="ar_down"></div>
+				</button>
+			</div>
+		</div>
+		<div class="backview">
+			<div class="yandexmap" id="map"></div>
+			<div class="dashinfo">
+				<h1></h1>
+				<hr>
+				<span id="description"></span>
+				<span id="address"></span>
+				<span><a href="#" id="site"></a></span>
+			</div>
+		</div>
+	</div>
+	<div class="page" id="start">
+		<div class="big_module">
+			<div class="t_module module">
+				<h1>Мы команда Evil Wheels</h1>
+				<p>Команда основана тремя энтузиастами, увлеченными велоспортом в 2012 году. Первоначальным приоритетом команды является популяризация и развитие экстремальных видов спорта. Наша деятельность осталась неизменной и по сей день, а команда стала более дружной и пополнилась новыми людьми, которые так же стремятся развивать наши интересы и продвигать их в обществе!</p>
+			</div>
+			<div class="l_module module">
+				<div class="container_photo" style="display: block; margin-left: 500px;">
+					<div class="photo" id="featured">
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/mtb/IMG_0697.jpg" data-description="Виталик Векшин." style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/mtbcover_1.png);"></div>
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/mtb/IMG_0782.jpg" data-description="Роман Георгиев." style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/mtbcover_2.png);"></div>
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/mtb/IMG_0610.jpg" data-description="Станислав Жданов." style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/mtbcover_3.png);"></div>
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/mtb/IMG_0600.jpg" data-description="Тамик Андроид." style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/mtbcover_4.png);"></div>
+					</div>
+				</div>
+				<div class="photo" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/mtbcover_2.png); background-size: cover; background-position: center; display: none; margin-top: 0px;"></div>
+				<div class="gradient pattern"></div>
+				<span class="introduce">#EvilWheels</span>
+				<h1 class="big">Велоспорт</h1>
+				<div class="line"></div>
+				<p>Развитие велоспорта на Кавказе является для нас не менее важным занятием, чем катание. Мы занимаемся строительством трасс, организацией мероприятий, развитием горного велосипеда как вида спорта, а также вовлечением молодежи в парковые дисциплины. В нашей команде не только гонщики, но и разные творческие личности, для которых спорт и развитие являются главными интересами в жизни.</p>
+				<a href="http://evilwheels.ru/mtb">Подробнее</a>
+			</div>
+			<div class="r_module module">
+				<div class="container_photo">
+					<div class="photo" id="featured2">
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/moto/IMG_6616.jpg" data-description="Виталик Векшин." style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/motocover_1.png);"></div>
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/moto/IMG_6534.jpg" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/motocover_2.png);"></div>
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/moto/IMG_6514.jpg" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/motocover_3.png);"></div>
+						<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/moto/IMG_6486.jpg" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/motocover_4.png);"></div>
+					</div>
+				</div>
+				<div class="photo" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/motocover_1.png); background-size: cover; background-position: center; display: none; margin-top: 0px;"></div>
+				<div class="quad pattern"></div>
+				<h1 class="big">Мотоспорт</h1>
+				<p>На данный момент именно это направление является основным для организационного состава команды. Мы усердно развиваемся в этом направлении, и пытаемся помочь в развитии менее опытным. Мы всё чаще и чаще покоряем новые вершины в хард эндуро и ставим рекорды на круговой трассе в мотокроссе.</p>
+				<a href="http://evilwheels.ru/moto">Подробнее</a>
+			</div>
+			<div class="c_module module">
+				<div class="photos">
+					<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/travel/IMG_4264.jpg" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/travelcover_1.png);"></div>
+					<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/travel/IMG_4388.jpg" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/travelcover_2.png);"></div>
+					<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/travel/IMG_1523.jpg" data-description="Былымское (Гижгитское) озеро." data-location="https://maps.yandex.ru/20176/tyrnauz/?ll=42.991753%2C43.462099&z=15" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/travelcover_3.png);"></div>
+					<div class="image" data-bind="true" data-src="http://cdn.Tamik.ru/storage/8b3518df10/highres/travel/IMG_1610.jpg" data-description="Былымское (Гижгитское) озеро." data-location="https://maps.yandex.ru/20176/tyrnauz/?ll=42.991753%2C43.462099&z=15" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/cover/travelcover_4.png);"></div>
+				</div>
+				<div class="photo" style="background-image: url(http://cdn.Tamik.ru/storage/8b3518df10/landing.jpg); background-size: cover; background-position: center; display: none; margin-top: 0px;"></div>
+				<div class="quad pattern"></div>
+				<div class="quad pattern"></div>
+				<h1 class="big">Путешествия</h1>
+				<div class="line"></div>
+				<p>В моменты, когда у нас есть свободное время и хочется отдохнуть, мы собираем необходимый инвентарь в рюкзак или багажник и отправляемся на поиск интересных мест и красивых видов, которых так не хватает при рутинной работе или сплошном однообразии. Мы не любим оставаться там, где всё уже изучено и не представляет исследовательского интереса. Ведь вокруг так много интересного!</p>
+				<a href="http://evilwheels.ru/travel">Подробнее</a>
+			</div>
+		</div>
+		<footer>
+			<h2 class="title">Следите за нами в социальных сетях</h2>
+			<h1 class="hash">#<span>EvilWheels</span></h1>
+			<div class="links">
+				<a href="http://evilwheels.ru/crew" class="link">О команде</a>
+				<a href="http://evilwheels.ru/mtb" class="link">Велоспорт</a>
+				<a href="http://evilwheels.ru/moto" class="link">Мотоспорт</a>
+				<a href="http://evilwheels.ru/travel" class="link">Путешествия</a>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33882629 = new Ya.Metrika({ id:33882629, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/33882629" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</body>
+</html>

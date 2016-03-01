@@ -1,0 +1,178 @@
+.app {}
+
+nav.return {
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 50px;
+}
+
+nav.return > a {
+	font-weight: bold;
+	font-size: 18px;
+	border-bottom: 2px solid transparent;
+	color: rgba(0, 50, 255, 0.9);
+	text-decoration: none;
+}
+
+nav.return > a:hover {
+	border-color: rgba(0, 50, 255, 0.7);
+}
+
+div.name {
+	margin-top: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h1.title {
+	display: inline-block;
+	font-family: "PT Serif";
+	margin-right: 15px;
+}
+
+h1.subtitle {
+	display: inline-block;
+	font-family: "Roboto Bold";
+	margin-left: 55px;
+}
+
+.slices {
+	position: absolute;
+	margin-top: -12px;
+}
+
+.slices > .slice {
+	font-family: "Roboto Black";
+	font-size: 72px;
+	color: rgba(255, 0, 0, 1);
+	opacity: 0.75;
+}
+
+.slices > .slice::before {
+	content: "/";
+}
+
+.slices > .slice:last-child {
+	margin-left: -15px;
+}
+
+.head_background {
+	position: absolute;
+	background-color: rgba(255, 0, 0, 0.5);
+	background-image: url();
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 450px;
+	margin-top: -25px;
+	z-index: -1;
+}
+
+p.introduce {
+	width: 620px;
+	margin: 0px auto;
+	margin-top: 50px;
+}
+
+p.introduce::first-letter {
+	font-weight: bold;
+	font-size: 40px;
+	padding-right: 5px;
+	line-height: 40px;
+	float: left;
+}
+
+.background {
+	position: absolute;
+	background-image: url(../upl/camp2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 700px;
+	margin-top: -250px;
+	z-index: -1;
+}
+
+@media(max-width: 1280px) {
+	.background {
+		left: 50%;
+		width: 1200px;
+		margin-left: -600px;
+	}
+}
+
+.map {
+	width: 100%;
+	height: 450px;
+	margin-top: 450px;
+}
+
+.feed {
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+@media(min-width: 1200px) {
+	.feed {
+		width: 1200px;
+	}
+}
+
+.feed > .pinned {
+	display: inline-block;
+	border: 1px dashed rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	width: 350px;
+	height: 350px;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.feed > .pinned > .image {
+	background-color: rgba(230, 230, 230, 1);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	transition: all 0.35s ease;
+}
+
+.feed > .pinned > .image:hover {
+	margin-top: -5px;
+	box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.5);
+}
+
+.more {
+	border: 3px solid;
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.35s ease;
+}
+
+.more:hover {
+	border-color: rgba(0, 50, 255, 0.9);
+	color: rgba(0, 50, 255, 0.9);
+}
+
+.more > span {
+	position: absolute;
+	font-size: 28px;
+	font-weight: bold;
+	width: 150px;
+	margin-top: 40px;
+	margin-left: -75px;
+}

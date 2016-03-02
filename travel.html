@@ -14,24 +14,14 @@
 	<title>Путешествия // Evil Wheels Riders Crew</title>
 	<link rel="shortcut icon" href="native/favicon.ico">
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/viewmodel.css">
-	<link rel="stylesheet" href="styles/popup.css">
+	<link rel="stylesheet" href="styles/view.css">
+	<link rel="stylesheet" href="styles/feed.css">
+	<link rel="stylesheet" href="styles/view_travel.css">
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script src="http://cdn.Tamik.ru/storage/lib/jquery.js"></script>
-	<script src="js/popup.js"></script>
+	<script src="http://cdn.Tamik.ru/storage/libs/jquery.js"></script>
 	<script src="js/model.js"></script>
 </head>
 <body>
-	<div class="popup">
-		<div class="fade"></div>
-		<div class="window">
-			<div class="photog"></div>
-			<div class="descp">
-				<p></p>
-				<a href="#" class="pin" target="_blank">Посмотреть на карте</a>
-			</div>
-		</div>
-	</div>
 	<div class="app">
 		<div class="name">
 			<h1 class="title">Путешествия</h1>
@@ -48,31 +38,31 @@
 		<div class="map" id="map"></div>
 		<div class="feed">
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/0.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/0.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/1.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/1.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/2.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/2.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/3.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/3.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/4.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/4.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/5.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/5.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/6.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/6.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/7.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/7.jpg);"></div>
 			</div>
 			<div class="pinned">
-				<div class="image" style="background-image: url(upl/snapster/8.jpg);"></div>
+				<div class="image" style="background-image: url(_cdn/_temp/upl/snapster/8.jpg);"></div>
 			</div>
 		</div>
 		<div class="more" onclick="loadmore();"><span>Показать еще</span></div>
@@ -80,7 +70,7 @@
 	<footer>
 		<h2 class="title">Следите за нами в социальных сетях</h2>
 		<h1 class="hash">#<span>EvilWheels</span></h1>
-		<div class="links">
+		<div class="links" style="display: none;">
 			<a href="http://evilwheels.ru/crew" class="link">О команде</a>
 			<a href="http://evilwheels.ru/mtb" class="link">Велоспорт</a>
 			<a href="http://evilwheels.ru/moto" class="link">Мотоспорт</a>

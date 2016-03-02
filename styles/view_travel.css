@@ -1,0 +1,30 @@
+.head_background {
+	position: absolute;
+	background-image: url(../native/mountains.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 450px;
+	margin-top: -25px;
+	z-index: -1;
+}
+
+.background {
+	position: absolute;
+	background-image: url(../native/camp.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 700px;
+	margin-top: -250px;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+@media(min-width: 1280px) {
+	.background {
+		left: 50%;
+		width: 1200px;
+		margin-left: -600px;
+	}
+}

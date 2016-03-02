@@ -1,0 +1,107 @@
+.slider {
+	width: 100%;
+	height: 450px;
+	margin-top: 25px;
+}
+
+.slider > .slide {
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	left: 50%;
+	width: 800px;
+	height: 450px;
+	margin-left: -400px;
+	box-shadow: 0px 0px 5px rgba(50, 50, 50, 0.75);
+}
+
+.slide.left {
+	height: 400px;
+	margin-top: 50px;
+	margin-left: -475px;
+	z-index: -2;
+}
+
+.slide.right {
+	height: 400px;
+	margin-top: 50px;
+	margin-left: -325px;
+	z-index: -2;
+}
+
+.slide.main {
+	z-index: -1;
+}
+
+.info {
+	margin-top: 200px;
+	margin-left: 150px;
+	opacity: 0;
+}
+
+.info > .playbtn {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 1);
+	border: 0px;
+	border-radius: 100%;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+	vertical-align: top;
+	transition: background-color 0.25s ease;
+}
+
+.info > .playbtn:focus, .info > .playbtn:hover {
+	background-color: rgba(15, 15, 15, 1);
+}
+
+.info > .playbtn > .icon {
+	background-image: url(../native/playbtn.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 55px;
+	height: 55px;
+	margin-left: 26px;
+}
+
+.info > .description {
+	display: inline-block;
+	margin-left: 10px;
+	color: rgba(255, 255, 255, 1);
+	cursor: default;
+}
+
+.info > .description > h1 {
+	font-family: "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+.info > .description > h2 {
+	font-family: "PT Serif", Georgia, serif;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.video {
+	display: none;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.video > iframe {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.page {
+	background-color: rgba(255, 255, 255, 1);
+	width: 100%;
+	margin-top: -10px;
+	padding-bottom: 50px;
+	box-shadow: 0 -2px 10px rgba(75, 75, 75, 0.25);
+}
+
+*:focus {
+	outline: 0px;
+}

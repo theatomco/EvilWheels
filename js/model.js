@@ -3,17 +3,17 @@ var n = 15;
 
 function loadmore() {
 	do {
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
 		i++;
 	} while(i < n);
 	$("body").animate({
@@ -21,8 +21,16 @@ function loadmore() {
 	}, 1500);
 }
 
+function play() {
+	$(".info").fadeOut(250);
+	$(".video").html('<iframe width="800" height="450" src="https://www.youtube.com/embed/CJEJDbeDqbc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+	setTimeout(function() {
+		$(".video").fadeIn(250);
+	}, 300);
+}
+
 $(document).ready(function() {
-	//some code stuff here.
+	$(".info").animate({"opacity":"1", "margin-top":"175px"}, 500);
 });
 
 ymaps.ready(init);

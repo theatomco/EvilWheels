@@ -1,0 +1,66 @@
+.feed {
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+@media(min-width: 1200px) {
+	.feed {
+		width: 1200px;
+	}
+}
+
+.feed > .pinned {
+	display: inline-block;
+	border: 1px dashed rgba(0, 0, 0, 0.05);
+	border-radius: 4px;
+	width: 350px;
+	height: 350px;
+	margin: 10px;
+}
+
+.feed > .pinned > .image {
+	background-color: rgba(230, 230, 230, 1);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	transition: all 0.35s ease;
+}
+
+.feed > .pinned > .image:hover {
+	/*margin-top: -5px;*/
+	/*box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.5);*/
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.more {
+	border: 3px solid;
+	border-radius: 100%;
+	width: 150px;
+	height: 150px;
+	margin: 0px auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	text-align: center;
+	transition: all 0.35s ease;
+}
+
+.more:hover {
+	border-color: rgba(0, 50, 255, 0.9);
+	color: rgba(0, 50, 255, 0.9);
+}
+
+.more > span {
+	position: absolute;
+	font-size: 28px;
+	font-weight: bold;
+	width: 150px;
+	margin-top: 40px;
+	margin-left: -75px;
+}

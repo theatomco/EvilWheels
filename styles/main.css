@@ -1,26 +1,26 @@
 @font-face {
 	font-family: "PT Sans";
-	src: url(http://cdn.Tamik.ru/storage/fonts/PT_Sans/PTS.ttf);
+	src: url(http://cdn.Tamik.ru/storage/fonts/PTSans/Regular.ttf);
 }
 
 @font-face {
 	font-family: "PT Serif";
-	src: url(http://cdn.Tamik.ru/storage/fonts/PT_Serif/PTF.ttf);
+	src: url(http://cdn.Tamik.ru/storage/fonts/PTSerif/Regular.ttf);
 }
 
 @font-face {
 	font-family: "Roboto";
-	src: url(http://cdn.Tamik.ru/storage/fonts/Roboto/Roboto-Regular.ttf);
+	src: url(http://cdn.Tamik.ru/storage/fonts/Roboto/Regular.ttf);
 }
 
 @font-face {
 	font-family: "Roboto Bold";
-	src: url(http://cdn.Tamik.ru/storage/fonts/Roboto/Roboto-Bold.ttf);
+	src: url(http://cdn.Tamik.ru/storage/fonts/Roboto/Bold.ttf);
 }
 
 @font-face {
 	font-family: "Roboto Black";
-	src: url(http://cdn.Tamik.ru/storage/fonts/Roboto/Roboto-Black.ttf);
+	src: url(http://cdn.Tamik.ru/storage/fonts/Roboto/Black.ttf);
 }
 
 html, body, div, a, p, span, ul, li, button, h1, h2, h3 {

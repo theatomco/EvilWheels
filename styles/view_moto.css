@@ -58,7 +58,7 @@
 }
 
 .info > .playbtn > .icon {
-	background-image: url(../native/playbtn.png);
+	background-image: url(http://evilwheels.ru/native/playbtn.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 55px;

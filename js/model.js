@@ -3,17 +3,17 @@ var n = 15;
 
 function loadmore() {
 	do {
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(native/feed/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(native/feed/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(native/feed/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(native/feed/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(native/feed/"+ i +".jpg);\"></div>");
 		i++;
-		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(_cdn/_temp/upl/snapster/"+ i +".jpg);\"></div>");
+		$(".feed").append("<div class=\"pinned\"><div class=\"image\" style=\"background-image: url(native/feed/"+ i +".jpg);\"></div>");
 		i++;
 	} while(i < n);
 	$("body").animate({

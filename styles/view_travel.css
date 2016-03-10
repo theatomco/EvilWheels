@@ -1,6 +1,6 @@
 .head_background {
 	position: absolute;
-	background-image: url(../native/mountains.png);
+	background-image: url(http://evilwheels/native/mountains.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 100%;
@@ -11,7 +11,7 @@
 
 .background {
 	position: absolute;
-	background-image: url(../native/camp.png);
+	background-image: url(http://evilwheels.ru/native/camp.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;

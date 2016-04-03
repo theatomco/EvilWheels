@@ -94,6 +94,7 @@ $(document).ready(function() {
 		$(".container_photo").css({"display":"none"});
 		$(".photo").css({"display":"block"});
 		$(".image").css({"display":"inline-block"});
+		$(".v_module").css({"display":"none"});
 	}
 });
 

@@ -2,19 +2,25 @@ $(document).ready(function() {
 	var width = $(window).width();
 	var height = $(window).height();
 
+	/* IN BETA  [ENDLESS FUNCTION] */
 	$(".module > a").css({"display":"none"});
 	$(".links").css({"display":"none"});
+	/* END */
 
 	$(".landing").css({"width":width, "height":height});
 	$(".mainview").css({"width":width, "height":height});
 	$(".backview").css({"width":width, "height":height});
 	$(".close-block").css({"height":height});
 	$(".topage").css({"width":width});
-	$(".page").css({"z-index":-1});
+	// $(".page").css({"z-index":-1});
 
 	if(device.windows()) {
-		$("#featured").orbit();
-		$("#featured2").orbit();
+		setTimeout(function() {
+			$("#featured").orbit();
+		}, 1000);
+		setTimeout(function() {
+			$("#featured2").orbit();
+		}, 2000)
 
 		$(window).resize(function() {
 			var width = $(window).width();
@@ -28,13 +34,13 @@ $(document).ready(function() {
 
 		$(".logo").click(function() {
 			$("html, body").animate({
-				scrollTop: $("#start").offset().top
+				scrollTop: $("#start").offset().top - 50
 			}, 1000);
 		});
 
 		$(".topage").click(function() {
 			$('html, body').animate({
-				scrollTop: $("#start").offset().top
+				scrollTop: $("#start").offset().top - 50
 			}, 1000);
 		});
 

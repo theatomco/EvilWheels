@@ -4,8 +4,8 @@ $(document).ready(function() {
 	var winwidth = width - 100;
 	var winheight = height - 120;
 
-	$(".window").css({"width":winwidth});
-	$(".window").css({"height":winheight});
+	// $(".window").css({"width":winwidth});
+	// $(".window").css({"height":winheight});
 	$(".window").css({"margin-top":-(winheight/2)});
 	$(".window").css({"margin-left":-(winwidth/2)});
 
@@ -38,7 +38,8 @@ $(document).ready(function() {
 					{
 						$(".descp").css({"display":"none"});
 					}
-					$(".photog").css({"background-image":"url("+$(this).attr("data-src")+")"});
+					// $(".photog").css({"background-image":"url("+$(this).attr("data-src")+")"});
+					$(".photog").attr({"src":$(this).attr("data-src")});
 				});
 			}
 		});
